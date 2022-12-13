@@ -15,17 +15,17 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		putchar('+');
+		putchar(%d '+' ,n);
 		return (1);
 	}
 	else if (n == 0)
 	{
-		putchar(0);
+		putchar(%d '0' ,n);
 		return (0);
 	}
 	else
 	{
-		putchar('-');
+		putchar(%d '-' ,n);
 		return (-1);
 	}
 }
