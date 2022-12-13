@@ -1,19 +1,19 @@
-
 #include "main.h"
 #include <stdio.h>
 #include <ctype.h>
 
 /**
- * _isalpha - Shows 1 if the input is a
- * letter Another cases, shows 0
+ * print_sign - Determines if the input number
+ * greater, iqual or less than zero.
  *
- * @c: The character in ASCII code
+ * @n: The input number as an integer.
  *
- * Return: 1 for letters. 0 for the rest.
+ * Return: 1 is greater than zero. 0 is zero.
+ * -1 is less than zero.
  */
 int print_sign(int n)
 {
-	if (n > 0 )
+	if (n > 0)
 	{
 		putchar('+');
 		return (1);
@@ -28,5 +28,4 @@ int print_sign(int n)
 		putchar('-');
 		return (-1);
 	}
-
 }
