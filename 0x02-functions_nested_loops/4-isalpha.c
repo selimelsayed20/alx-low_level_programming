@@ -13,7 +13,7 @@
  */
 int _isalpha(int c)
 {
-	if ((islower(c)) && (isalpha(c)) )
+	if (isalpha(c))
 	{
 		return (1);
 	}
