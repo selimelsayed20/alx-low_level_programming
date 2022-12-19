@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * reset_to_98 - takes a pointer to a parameter and updates its value.
+ * print_rev - a function that prints a string.
  * @s: input string.
  * Return: no return.
  */
