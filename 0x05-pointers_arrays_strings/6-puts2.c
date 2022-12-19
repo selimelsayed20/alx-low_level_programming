@@ -1,10 +1,23 @@
 #include "main.h"
-#include "_putchar.c"
-#include "6-main.c"
-
 
 /**
- * reset_to_98 - takes a pointer to a parameter and updates its value.
+ * puts2 - prints one char out of 2 of a string.
  * @str: input string.
  * Return: no return.
  */
+void puts2(char *str)
+{
+	int count = 0;
+
+	while (count >= 0)
+	{
+		if (str[count] == '\0')
+		{
+			_putchar('\n');
+			break;
+		}
+		if (count % 2 == 0)
+			_putchar(str[count]);
+		count++;
+	}
+}
