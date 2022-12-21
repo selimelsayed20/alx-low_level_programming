@@ -1,14 +1,3 @@
-EYADHADY
-/
-alx-low_level_programming
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
 #include "main.h"
 
 /**
