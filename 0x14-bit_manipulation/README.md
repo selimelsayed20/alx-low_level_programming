@@ -1,53 +1,40 @@
-###  0x14. C - Bit manipulation
+# Project Name
+**0x14. C - Bit manipulation**
 
-# Its a 14th project of ALX-Low_level_programming in c
+## Author's Details
+Name: *Wendy Munyasi.*
 
------------------------------------------
+Email: *wendymunyasi@gmail.com*
 
-Bit manipulation is the act of algorithmically manipulating bits or other pieces of data shorter than a word. Computer programming tasks that require bit manipulation include low-level device control, error detection and correction algorithms, data compression, encryption algorithms, and optimization.
+Tel: *+254707240068.*
 
--------------
-## The hexadecimal number system
-
-  Digit          | Binary                        |Examples |
-|----------------|-------------------------------|-----------------------------|
-| `0` | 0000 | y |
-| `1` | 0001 | y |
-| `2` | 0010 | y |
-| `3` | 0011 | y |
-| `4` | 0100 | y |
-| `5` | 0101 | y |
-| `6` | 0110 | y |
-| `7` | 0111 | y |
-| `8` | 1000 | y |
-| `9` | 1001 | y |
-| `a` | 1010 | y |
-| `b` | 1011 | y |
-| `c` | 1100 | y |
-| `e` | 1101 | y |
-| `f` | 1111 | y |
+##  Requirements
+*   Allowed editors: `vi`, `vim`, `emacs`.
+*   All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`.
+*   Your code should use the `Betty` style. It will be checked using `betty-style.pl` and `betty-doc.pl`.
+*   All your files should end with a new line.
+*   You are not allowed to use global variables.
+*   No more than 5 functions per file.
+*   The only C standard library functions allowed are `malloc`, `free` and `exit`. Any use of functions like `printf`, `puts`, `calloc`, `realloc` etc… is forbidden unless stated othewise.
+*   You are allowed to use `_putchar`.
+*   The `main.c` files are used to test your functions, but you don’t have to push them to your repo.
+*   The prototypes of all your functions and the prototype of the function `_putchar` should be included in your header file called `main.h`.
+*   All your header files should be include guarded.
 
 
-------------
-# Hexadecimal is assigned usign "0x" notation.
+## Project Description
+Learn about bit and bit manipulation. Also involves the use of pointers.
 
-...... ----
-#### Bitwise operation used
- operator | meaning | comment|
- `&` | The & operator is the bitwise logical and operator, which forms the logical and of pairs of bits taken from two numbers | `(1010)&(0110) = (0010) = 0x2`
- `|` | operator forms the bitwise or `x|y` | `(1010)|(0110) = (1110) = 0xe`
- `^`| operator forms the exclusive or of bits | `(1010)^(0110) = (1100) = 0xc`
- `~`| operator is the bitwise negation operator |`0xb = 1011, ~x evaluates to 0100`
+* **0. 0** - Write a function that converts a binary number to `an unsigned int`. - `0-binary_to_uint.c`.
+* **1. 1** - Write a function that prints the binary representation of a number. - `1-print_binary.c`.
+* **2. 10** - Write a function that returns the value of a bit at a given index. - `2-get_bit.c`.
+* **3. 11** - Write a function that sets the value of a bit to `1` at a given index. - `3-set_bit.c`.
+* **4. 100** - Write a function that sets the value of a bit to `0` at a given index. - `4-clear_bit.c`.
+* **5. 101** - Write a function that returns the number of bits you would need to flip to get from one number to another. - `5-flip_bits.c`.
+* **6. Endianness** - Write a function that checks the endianness. - `100-get_endianness.c`.
+* **7. Crackme3** - Find the password for this [program](https://github.com/holbertonschool/0x13.c). - `101-password`.
 
- # working with individual bits
 
-## == equal operators
-  If we have an unsigned short variable x with the value of 0xa8 = 10101000 and we want to determine whether or not the last bit is a 0, we would use the test x&0x01 == 0,
-## | or operator
-  To set bits in a number to particular values we use either | or & depending on whether we want to set that bit to be a 1 or a 0. For example, to set the fourth bit in an eight bit variable y to be a 1 we would use y = y|0x10
+## Collaborate
 
-## & and operator
-  To set the fourth bit of y to 0 we would use & with the mask 0xef = 11101111: y = y&0xef
-
-## ~ negation
-Another way to do this is to use the ~ operator to help construct the mask: y = y&(~0x10)
+To collaborate, reach me through my email address wendymunyasi@gmail.com.

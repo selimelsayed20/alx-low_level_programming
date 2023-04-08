@@ -1,22 +1,26 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <ctype.h>
 
 /**
- * main - Prints the alphabet without q and e.
+ * main - Program that prints the alphabet in lowercase followed by a new line.
  *
- * Return: Always 0 (Success)
- */
+ * Print all the letters except q and e.
+ * You can only use the putchar function (every other function (printf,
+ * puts, etc…) is forbidden).
+ * All your code should be in the main function.
+ * You can only use putchar twice in your code.
+
+ * Return: 0
+*/
+
 int main(void)
 {
-	int i;
+	int ch;
 
-	for (i = 97; i < 123; i++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if (i != 101 && i != 113)
-		{
-			putchar(i);
-		}
+		if (ch != 'e' && ch != 'q')
+		putchar(ch);
 	}
 	putchar('\n');
 	return (0);

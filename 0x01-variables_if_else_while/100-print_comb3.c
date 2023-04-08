@@ -1,37 +1,41 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers between 00 to 89.
+ * main - Program that print all possible different combinations of two digits.
  *
- * Return: Always 0 (Success)
- */
+ * Numbers must be separated by ,, followed by a space.
+ * The two digits must be different.
+ * 01 and 10 are considered the same combination of the two digits 0 and 1.
+ * Print only the smallest combination of two digits.
+ * Numbers should be printed in ascending order, with two digits.
+ * You can only use the putchar function (every other function (printf,
+ * puts, etc…) is forbidden).
+ * You can only use putchar five times maximum in your code.
+ * You are not allowed to use any variable of type char.
+ * All your code should be in the main function.
+ *
+ * Return: 0.
+*/
+
 int main(void)
 {
-	int i, e;
+	int tens;
+	int ones;
 
-	i = 48;
-	e = 48;
-
-	while (e < 58)
+	for (tens = 0; tens <= 9; tens++)
 	{
-		i = 48;
-		while (i < 58)
+		for (ones = tens + 1; ones <= 9; ones++)
 		{
-			if (e != i && e < i)
+			putchar(tens + '0');
+			putchar(ones + '0');
+			if (tens < 8)
 			{
-				putchar(e);
-				putchar(i);
-				if (i == 57 && e == 56)
-				{
-					break;
-				}
 				putchar(',');
 				putchar(' ');
 			}
-			i++;
 		}
-		e++;
 	}
 	putchar('\n');
+
 	return (0);
 }

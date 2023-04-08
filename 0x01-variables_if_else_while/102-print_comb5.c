@@ -1,48 +1,49 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers between 00 to 99.
+ * main - Prog that prints all possible combinations of two two-digit numbers.
  *
- * Return: Always 0 (Success)
- */
+ * The numbers should range from 0 to 99.
+ * The two numbers should be separated by a space.
+ * All numbers should be printed with two digits. 1 should be printed as 01.
+ * The combination of numbers must be separated by comma, followed by a space.
+ * The combinations of numbers should be printed in ascending order.
+ * 00 01 and 01 00 are considered as the same combination of the nums 0 and 1.
+ * You can only use the putchar function (every other function (printf,
+ * puts, etc…) is forbidden).
+ * You can only use putchar eight times maximum in your code.
+ * You are not allowed to use any variable of type char.
+ * All your code should be in the main function.
+ *
+ * Return: 0
+*/
+
 int main(void)
 {
-int i, e, g, h, op1, op2;
+	int tens, ones;
 
-i = e = g = h = 48;
-while (h < 58)
-{
-	g = 48;
-	while (g < 58)
+	for (tens = 0; tens <= 99; tens++)
 	{
-		e = 48;
-		while (e < 58)
+		for (ones = 0; ones <= 99; ones++)
 		{
-			i = 48;
-			while (i < 58)
+			if (tens < ones)
 			{
-				op1 = (h * 10) + g;
-				op2 = (e * 10) + i;
-				if (op1 < op2)
+				putchar((tens / 10) + 48);
+				putchar((tens % 10) + 48);
+				putchar(' ');
+				putchar((ones / 10) + 48);
+				putchar((ones % 10) + 48);
+				if (tens != 98 || ones != 99)
 				{
-					putchar(h);
-					putchar(g);
-					putchar(' ');
-					putchar(e);
-					putchar(i);
-					if (h == 57 && g == 56 && e == 57 && i == 57)
-						break;
 					putchar(',');
 					putchar(' ');
 				}
-				i++;
 			}
-			e++;
+
 		}
-		g++;
+
 	}
-	h++;
-}
-putchar('\n');
-return (0);
+	putchar('\n');
+
+	return (0);
 }

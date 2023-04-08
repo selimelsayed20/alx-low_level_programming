@@ -1,11 +1,17 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * wildcmp - compares two strings.
- * @s1: string 1.
- * @s2: string 2. It can contains a * as a special character.
- * Return: 1 if are identical, 0 if not.
+ * wildcmp - function that compares two strings.
+ * @s1: pointer to the first null-terminated byte string to be examined.
+ * @s2: pointer to the second null-terminated byte string to be examined.
+ *
+ * s2 can contain the special character *.
+ * The special char * can replace any string (including an empty string).
+ *
+ * Return: 1 if strings are identical and 0 if otherwise.
  */
+
 int wildcmp(char *s1, char *s2)
 {
 	if (*s2 == '*' && *(s2 + 1) != '\0' && *s1 == '\0')

@@ -1,14 +1,12 @@
 #include "main.h"
 /**
-*_isdigit - function that verifies if a  character is a digit or not
-*@c: tested character
-*Return: returns 1 if it is uppercase , 0 if not
-*/
+ * _isdigit - Function that checks for a digit (0 through 9).
+ * @c: character to classify.
+ *
+ * Return: 1 if c is a digit and 0 otherwise.
+ */
 
 int _isdigit(int c)
 {
-if ((c >= 48) && (c <= 57))
-return (1);
-
-return (0);
+	return (c >= 48 && c <= 57);
 }

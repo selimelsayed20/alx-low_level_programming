@@ -1,17 +1,20 @@
+#include <stdio.h>
 #include "main.h"
+#include <string.h>
 
 /**
- * _strlen - a function that swaps the values of two integers.
- * @s: input string.
- * Return: no return.
+ * _strlen - Function that returns the length of string.
+ * @s: pointer to the null-terminated byte string to be examined.
+ *
+ * Return: The length of the null-terminated byte string s.
  */
 
 int _strlen(char *s)
 {
-	int i = 0;
+	int len = 0;
 
-	while (*(s + i) != '\0')
+	while (s[len] != '\0')
+		len++;
 
-		i++;
-	return (i);
+	return (len);
 }

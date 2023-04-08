@@ -1,28 +1,39 @@
-# Variables, if, else and while
+# Project Name.
+**0x01. C - Variables, if, else, while**
 
-Project done during **Full Stack Software Engineering studies** at **Holberton School**. It aims to learn about arithmetic operators, relational operators, boolean operators, comments, declaring variables and loops in **C language**.
+## Author's Details.
+Name: *Wendy Munyasi.*
 
-## Technologies
-* C files are compiled using `gcc 4.8.4`
-* C files are written according to the C90 standard
-* Tested on Ubuntu 14.04 LTS
+Email: *wendymunyasi@gmail.com*
 
-## Files
-All of the following files are programs written in C:
+Tel:*+254707240068.*
 
-| Filename | Description |
-| -------- | ----------- |
-| `0-positive_or_negative.c` | Prints `is positive`, `is zero` or `is negative` when a randomly generated number is any of these cases |
-| `1-last_digit.c` | Prints the last digit of a randomly generated number |
-| `2-print_alphabet.c` | Prints the alphabet in lowercase |
-| `3-print_alphabets.c` | Prints the alphabet in lowercase, and then in uppercase |
-| `4-print_alphabet.c` | Prints the alphabet in lowercase, except `q` and `e` letters |
-| `5-print_numbers.c` | Prints all single digit numbers of base 10 starting from `0` |
-| `6-print_numberz.c` | Prints all single digit numbers of base 10 starting from `0`, without using `char` variables |
-| `7-print_tebahpla.c` | Prints the lowercase alphabet in reverse |
-| `8-print_base16.c` | Prints all the numbers of base 16 in lowercase |
-| `9-print_comb.c` | Prints all possible combinations of single-digit numbers |
-| `10-print_comb2.c` | Prints the numbers from 00 to 99 |
-| `100-print_comb3.c` | Prints all possible different combinations of two digits, separated by `,` |
-| `101-print_comb4.c` | Prints all possible different combinations of three digits, separated by `,` |
-| `102-print_comb5.c` | Prints all possible combinations of two two-digit numbers |
+##  Requirements
+
+*   Allowed editors: `vi`, `vim`, `emacs`.
+*   All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`.
+*   Your code should use the `Betty` style. It will be checked using `betty-style.pl` and `betty-doc.pl` .
+*   All your files should end with a new line.
+*   There should be no errors and no warnings during compilation.
+*   You are not allowed to use `system`.
+
+## Project Description.
+Learning C variables, if, else and while statements.
+
+* **0. Positive anything is better than negative nothing** - This program will assign a random number to the variable `n` each time it is executed. Complete the source code in order to print whether the number stored in the variable `n` is positive or negative. - `0-positive_or_negative.c`.
+* **1. The last digit** - This program will assign a random number to the variable `n` each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable `n`. - `1-last_digit.c`.
+* **2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game** - Write a program that prints the alphabet in lowercase, followed by a new line. - `2-print_alphabet.c`.
+* **3. alphABET** - Write a program that prints the alphabet in lowercase, and then in uppercase, followed by a new line. - `3-print_alphabets.c`.
+* **4. When I was having that alphabet soup, I never thought that it would pay off** - Write a program that prints the alphabet in lowercase, followed by a new line. - `4-print_alphabt.c`.
+* **5. Numbers** - Write a program that prints all single digit numbers of base 10 starting from `0`, followed by a new line. - `5-print_numbers.c`.
+* **6. Numberz** - Write a program that prints all single digit numbers of base 10 starting from `0`, followed by a new line. - `6-print_numberz.c`.
+* **7. Smile in the mirror** - Write a program that prints the lowercase alphabet in reverse, followed by a new line. - `7-print_tebahpla.c`.
+* **8. Hexadecimal** - Write a program that prints all the numbers of base 16 in lowercase, followed by a new line. - `8-print_base16.c`.
+* **9. Patience, persistence and perspiration make an unbeatable combination for success** - Write a program that prints all possible combinations of single-digit numbers. - `9-print_comb.c`.
+* **10. Inventing is a combination of brains and materials. The more brains you use, the less material you need** - Write a program that prints all possible different combinations of two digits. - `100-print_comb3.c`.
+* **11. The success combination in business is: Do what you do better... and: do more of what you do...** - Write a program that prints all possible different combinations of three digits. - `101-print_comb3.c`.
+* **12. Software is eating the World** - Write a program that prints all possible combinations of two two-digit numbers. - `102-print_comb3.c`.
+
+## Collaborate
+
+To collaborate, reach me through my email address wendymunyasi@gmail.com.

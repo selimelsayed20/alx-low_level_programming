@@ -1,28 +1,35 @@
+#include <stdio.h>
 #include "main.h"
+
 /**
- * rot13 - encodes a string using rot13
- * @s: input string.
- * Return: the pointer to dest.
+ * rot13 - function that encodes a string into using rot13.
+ * @string: pointer to string to be encoded.
+ *
+ * You can only use if statement once in your code.
+ * You can only use two loops in your code.
+ * You are not allowed to use switch.
+ * You are not allowed to use any ternary operation.
+ *
+ * Return: the encoded string.
  */
 
-char *rot13(char *s)
+char *rot13(char *string)
 {
-	int count = 0, i;
-	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	int i = 0, j;
+	char alphabeticos[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rot13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	while (*(s + count) != '\0')
+	while (*(string + i) != '\0')
 	{
-		for (i = 0; i < 52; i++)
+		for (j = 0; j < 52; j++)
 		{
-			if (*(s + count) == alphabet[i])
+			if (*(string + i) == alphabeticos[j])
 			{
-				*(s + count) = rot13[i];
+				*(string + i) = rot13[j];
 				break;
 			}
 		}
-		count++;
+		i++;
 	}
-
-	return (s);
+	return (string);
 }

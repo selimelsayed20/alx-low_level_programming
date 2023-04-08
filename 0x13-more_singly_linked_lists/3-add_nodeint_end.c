@@ -1,40 +1,42 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
- * add_nodeint_end - add a new node at the end
- * of a linked list
- * @head: head of a list.
- * @n: n element.
+ * add_nodeint_end -  function that adds a new node at the end of,
+ * a listint_t list.
+ * @head: pointer to the pointer of head of linked list.
+ * @n: data to add to the list.
  *
- * Return: address of the new element. NUll if it failed.
+ * Return: the address of the new element, or NULL if it failed.
  */
+
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *new;
-	listint_t *temp;
+	listint_t *new_node;
+	listint_t *traverse = *head; /* pointer to the first node */
 
-	(void)temp;
-
-	new = malloc(sizeof(listint_t));
-
-	if (new == NULL)
+	/* create a new node */
+	new_node = malloc(sizeof(listint_t));
+	/* check if malloc has failed and return null */
+	if (new_node == NULL)
 		return (NULL);
-
-	new->n = n;
-	new->next = NULL;
-	temp = *head;
-	if (*head == NULL)
+	/* access the n field of the struct and initialize it with n */
+	/* which has been passed to the function */
+	new_node->n = n;
+	/* since we are adding to the end of the list then the */
+	/* next field should point to the end of the current list ie NULL */
+	new_node->next = NULL;
+	/* if the list is empty ie value at head is NULL */
+	if (*head == NULL) /* derefrence to get first value */
 	{
-		*head = new;
+		*head = new_node; /* address of the new_node */
+		return (new_node);
 	}
-	else
-	{
-		while (temp->next != NULL)
-		{
-			temp = temp->next;
-		}
-		temp->next = new;
-	}
-
-	return (*head);
+	/* if the list is not empty traverse to the end of the list */
+	while (traverse->next != NULL)
+		traverse = traverse->next;
+		/* loop exits once traverse->next == NULL ie at end of list */
+	/* set the new_node as last node */
+	traverse->next = new_node;
+	return (new_node);
 }

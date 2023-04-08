@@ -1,19 +1,18 @@
-#include "main.h"
 #include <stdio.h>
 #include <ctype.h>
+#include "main.h"
 
 /**
- * _islower - Shows 1 if the input is a
- * lowercase character. Another cases, shows
- * 0
+ * _islower - Function that checks for lowercase character.
+ * @c: character to classify.
  *
- * @c: The character in ASCII code
+ * Return: 1 if c is lowercase or otherwise 0.
  *
- * Return: 1 for lowercase character. 0 for the rest.
- */
+*/
+
 int _islower(int c)
 {
-	if (islower(c))
+	if islower(c)
 	{
 		return (1);
 	}

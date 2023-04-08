@@ -1,12 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
- * add - Check Main
- * @a: An integer a
- * @b: An integer b
- * Description: Function that adds two integers and returns the result
- * Return: Result to add a and b
- */
+ * add - A function that adds two integers.
+ * @a: integer number
+ * @b: integer number
+ *
+ * Return: Result of the addition.
+*/
+
 int add(int a, int b)
 {
 	return (a + b);

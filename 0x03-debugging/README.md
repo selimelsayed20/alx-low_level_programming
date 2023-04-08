@@ -1,17 +1,28 @@
-Debugging is the process of finding and resolving bugs (Defects or probelms that prevent correct operation) within computer program,software or system. Debugging tactics can involve interactive debugging, control flow analysis, unit testing, integration testing, log file analysis, monitoring at the application or system level, memory dumps, and profiling.
+# Project Name.
+**0x03. C - Debugging**
 
-# Debugging
+## Author's Details.
+Name: *Wendy Munyasi.*
 
-Project done during **Full Stack Software Engineering studies** at **ALX**. It aims to learn how to debug in **C language**.
+Email: *wendymunyasi@gmail.com*
 
+Tel:*+254707240068.*
 
-## Files
-All of the following files are programs written in C:
+##  Requirements
 
-| Filename | Description |
-| -------- | ----------- |
-| `0-main.c` | Test that function `positive_or_negative()` gives the correct output when given a case of `0` |
-| `1-main.c` | Fixed program to the infinite loop |
-| `2-largest_number.c` | Prints the largest of three integers |
-| `3-print_remaining_days.c` | Converts a date to the day of year and determines how many days are left in the year |
-| `main.h` | Header file |
+*   Allowed editors: `vi`, `vim`, `emacs`.
+*   All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options `-Wall -Werror -Wextra -pedantic -std=gnu89` .
+*   Your code should use the `Betty` style. It will be checked using `betty-style.pl` and `betty-doc.pl` .
+*   All your files should end with a new line.
+
+## Project Description.
+Practicing how to debug in C.
+
+* **0. Multiple mains** - Based on the main.c file shown, create a file named `0-main.c`. This file must test that the function `positive_or_negative()` gives the correct output when given a case of `0`. - `0-main.c, main.h`.
+* **1. Like, comment, subscribe** - Copy this main file. Comment out (don’t delete it!) the part of the code that is causing the output to go into an infinite loop. - `1-main.c`.
+* **2. 0 > 972?** - Fix the code in `2-largest_number.c` so that it correctly prints out the largest of three numbers, no matter the case. - `2-largest_number.c, main.h`.
+* **3. Leap year** - Fix the `print_remaining_days()` function so that the output works correctly for **all** dates and **all** leap years. - `3-print_remaining_days.c, main.h`.
+
+## Collaborate
+
+To collaborate, reach me through my email address wendymunyasi@gmail.com.

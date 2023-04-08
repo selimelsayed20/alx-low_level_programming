@@ -1,19 +1,23 @@
 #include <stdio.h>
+#include <ctype.h>
 
 /**
- * main - Prints the alphabet.
- *
- * Return: Always 0 (Success)
- */
+ * main - Entry point
+ * Description: prints all alphabet in lower case
+ * Return: 0
+*/
+
 int main(void)
 {
-	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
+	int x;
+	int lower_x;
 
-	for (i = 0; i < 26; i++)
+	for (x = 'A'; x <= 'Z'; x++)
 	{
-		putchar(alp[i]);
+		lower_x = tolower(x);
+		putchar(lower_x);
 	}
-	putchar('\n');
+		putchar('\n');
+
 	return (0);
 }
