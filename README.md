@@ -2,11 +2,10 @@
 **Low-level programming & Algorithm**
 
 ## Author's Details
-Name: *Wendy Munyasi.*
+Name: *Selim Elsayed.*
 
-Email: *wendymunyasi@gmail.com*
+Email: *saleemelsayed17@gmail.com*
 
-Tel: *+254707240068.*
 
 ## Technologies
 * Scripts written in Bash 5.0.17(1).
